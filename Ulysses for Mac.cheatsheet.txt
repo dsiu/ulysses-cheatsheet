@@ -3,7 +3,7 @@ cheatsheet do
 	docset_file_name 'ulysses'
 	keyword 'ulysses'
 	introduction <<-'END'
-[Quick Export]
+
 END
 	category do
 		id 'Basic Operation'
@@ -64,7 +64,7 @@ END
 		end
 	end
 	category do
-		id 'Views and Frequently Used Features'
+		id 'Basic Operation / Views and Frequently Used Features'
 		entry do
 			name 'toggle the library'
 			command '`⌘1`'
@@ -112,7 +112,7 @@ END
 		end
 	end
 	category do
-		id 'Quick Open Panel'
+		id 'Basic Operation / Quick Open Panel'
 		entry do
 			name 'look for a sheet in the whole library'
 			command '`⌘O`'
@@ -130,7 +130,7 @@ END
 		end
 	end
 	category do
-		id 'Global Search'
+		id 'Basic Operation / Global Search'
 		entry do
 			name 'switch focus to the sheet filter'
 			command '`⇧⌘F`'
@@ -143,7 +143,7 @@ END
 		end
 	end
 	category do
-		id 'Editor Find & Replace'
+		id 'Basic Operation / Editor Find & Replace'
 		entry do
 			name 'show the Find panel'
 			command '`⌘F`'
@@ -161,7 +161,7 @@ END
 		end
 	end
 	category do
-		id 'Favorites'
+		id 'Basic Operation / Favorites'
 		entry do
 			name 'add a sheet to or remove it from Favorites'
 			command '`⌘D`'
@@ -179,7 +179,7 @@ END
 		end
 	end
 	category do
-		id 'Editor Smart Paste'
+		id 'Basic Operation / Editor Smart Paste'
 		entry do
 			name 'invoke Smart Paste'
 			command '`⇧⌘V`'
@@ -217,7 +217,7 @@ END
 		end
 	end
 	category do
-		id 'Multiple Windows, Split View'
+		id 'Screen Modes / Multiple Windows, Split View'
 		entry do
 			name 'New Window'
 			command '`⌥⌘N`'
@@ -241,7 +241,7 @@ END
 		end
 	end
 	category do
-		id 'Sheet List Options'
+		id 'Screen Modes / Sheet List Options'
 		entry do
 			name ''
 
@@ -264,7 +264,7 @@ END
 		end
 	end
 	category do
-		id 'Editor Options'
+		id 'Screen Modes / Editor Options'
 		entry do
 			name ''
 
@@ -282,7 +282,7 @@ END
 		end
 	end
 	category do
-		id 'Font Size'
+		id 'Screen Modes / Font Size'
 		entry do
 			name 'increase font size'
 			command '`⌘+`'
@@ -333,7 +333,7 @@ END
 		end
 	end
 	category do
-		id 'Smart Tags'
+		id 'Markup / Smart Tags'
 		entry do
 			name ''
 
@@ -346,7 +346,7 @@ END
 		end
 	end
 	category do
-		id 'End Tag Completion'
+		id 'Markup / End Tag Completion'
 		entry do
 			name 'automatically enter an end tag placeholder.'
 			command '`esc`'
@@ -385,7 +385,7 @@ END
 		end
 	end
 	category do
-		id 'Escape Character'
+		id 'Markup / Escape Character'
 		entry do
 			name ''
 
@@ -393,7 +393,7 @@ END
 		end
 	end
 	category do
-		id 'Markup Bar'
+		id 'Markup / Markup Bar'
 		entry do
 			name 'show Markup Bar'
 			command '`⌘9`'
@@ -418,7 +418,7 @@ END
 		end
 	end
 	category do
-		id 'Markup Language'
+		id 'Markup / Markup Language'
 		entry do
 			name ''
 
@@ -449,7 +449,7 @@ END
 		end
 	end
 	category do
-		id 'Smart Lists'
+		id 'Lists / Smart Lists'
 		entry do
 			name 'add another list item'
 			command '`↩︎`'
@@ -469,7 +469,7 @@ END
 		end
 	end
 	category do
-		id 'Media'
+		id 'Lists / Media'
 		entry do
 			name ''
 
@@ -477,7 +477,7 @@ END
 		end
 	end
 	category do
-		id 'Text Objects'
+		id 'Lists / Text Objects'
 		entry do
 			name 'select'
 			command '`⌘`-Click'
@@ -490,7 +490,7 @@ END
 		end
 	end
 	category do
-		id 'Text Object Popovers'
+		id 'Lists / Text Object Popovers'
 		entry do
 			name 'close and move insertion point forward'
 			command '`⌘↩︎`'
@@ -508,7 +508,7 @@ END
 		end
 	end
 	category do
-		id 'Navigation, Library'
+		id 'Navigation / Library'
 		entry do
 			name 'to open group'
 			command '`→` on groups'
@@ -521,7 +521,7 @@ END
 		end
 	end
 	category do
-		id 'Navigation, Sheet List'
+		id 'Navigation / Sheet List'
 		entry do
 			name 'switch focus into the editor (placing insertion point at last edited location)'
 			command '`→`'
@@ -534,7 +534,7 @@ END
 		end
 	end
 	category do
-		id 'Navigation, Editor'
+		id 'Navigation / Editor'
 		entry do
 			name 'move one sheet up'
 			command 'Double-tap `↑`'
@@ -566,7 +566,7 @@ END
 		end
 	end
 	category do
-		id 'Copy & Move in Sidebars'
+		id 'Navigation / Copy & Move in Sidebars'
 		entry do
 			name ''
 
@@ -586,6 +586,175 @@ END
 			name 'force _move_ of groups and sheets.'
 			command 'Hold `⌘` while dragging'
 
+		end
+	end
+	category do
+		id 'Quick Export'
+		entry do
+			name 'show Quick Export (SIXport) for the current editor'
+			command '`⌘6`'
+
+		end
+		entry do
+			name ''
+
+			notes %(You can also right-click on a group, filter or sheet in the sidebar and select “Quick Export…”.)
+		end
+	end
+	category do
+		id 'Quick Export / Text Export'
+		entry do
+			name ''
+
+			notes %(Choose between Plain Text, Rich Text, Markdown and TextBundle output:)
+		end
+		entry do
+			name ''
+
+			notes %(- “Plain Text” will strip out all tags, comments, annotations, images etc., and only export the text itself.)
+		end
+		entry do
+			name ''
+
+			notes %(- “Rich Text” will produce a simple RTF file.)
+		end
+		entry do
+			name ''
+
+			notes %(- “Markdown” will keep (or convert) all tags and export the text in Markdown syntax.)
+		end
+		entry do
+			name ''
+
+			notes %(- [“TextBundle”](http://TextBundle.org) is a new file format which supports embedded images in plain text files.)
+		end
+	end
+	category do
+		id 'Quick Export / HTML Export'
+		entry do
+			name ''
+
+			notes %(Choose an export style to be applied during export.)
+		end
+		entry do
+			name ''
+
+			notes %(Choose between Snippet and Single Page output:)
+		end
+		entry do
+			name ''
+
+			notes %(- “Snippet” will just convert all tags to HTML and then export the text.)
+		end
+		entry do
+			name ''
+
+			notes %(- “Single Page” will create a complete HTML document, including header, body, CSS links and so on.)
+		end
+	end
+	category do
+		id 'Quick Export / ePub Export'
+		entry do
+			name ''
+
+			notes %(- Choose an export style to be applied during export.)
+		end
+		entry do
+			name ''
+
+			notes %(- You can set title and author metadata.)
+		end
+		entry do
+			name ''
+
+			notes %(- You can drop an image to be used as cover image for your ebook.)
+		end
+	end
+	category do
+		id 'Quick Export / PDF Export'
+		entry do
+			name ''
+
+			notes %(- Choose an export style to be applied during export.)
+		end
+		entry do
+			name ''
+
+			notes %(- Choose a paper format.)
+		end
+	end
+	category do
+		id 'Quick Export / DOCX Export'
+		entry do
+			name ''
+
+			notes %(- Choose an export style to be applied during export.)
+		end
+		entry do
+			name ''
+
+			notes %(- Choose a paper format.)
+		end
+	end
+	category do
+		id 'Quick Export / Publishing'
+		entry do
+			name ''
+
+			notes %(- Ulysses lets you publish directly to Wordpress blogs for which you have editing access:)
+		end
+		entry do
+			name ''
+
+			notes %(- 1. Choose “Add Account › WordPress/Custom WordPress”.)
+		end
+		entry do
+			name ''
+
+			notes %(- 2. Provide your Username and Password, and, for a self-hosted WordPress installation, the URL.)
+		end
+		entry do
+			name ''
+
+			notes %(- 3. Before publishing a post, you can revise its settings (categories, tags, schedule, publishing status and so on.))
+		end
+		entry do
+			name ''
+
+			notes %(- If you own a [Medium](https://medium.com) account, Ulysses allows you to publish your texts as drafts to Medium:)
+		end
+		entry do
+			name ''
+
+			notes %(- 1. Choose “Add Account › Medium”.)
+		end
+		entry do
+			name ''
+
+			notes %(- 2. You’ll need to provide an integration token for activation.)
+		end
+	end
+	category do
+		id 'Quick Export / Export Preview'
+		entry do
+			name 'preview the current sidebar selection (can be groups)'
+			command '`⇧⌘P`'
+
+		end
+		entry do
+			name 'refresh all open previews'
+			command '`⌘R`'
+
+		end
+		entry do
+			name ''
+
+			notes %(Choose an export style to be used for preview)
+		end
+		entry do
+			name ''
+
+			notes %(You can export directly from the preview window.)
 		end
 	end
 	category do
